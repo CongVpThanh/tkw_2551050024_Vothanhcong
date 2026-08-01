@@ -2,14 +2,14 @@
 
 | Vai trò | Giá trị đọc trong Figma | Tên token của tôi | Class Tailwind |
 | :--- | :--- | :--- | :--- |
-| Màu thương hiệu chính |  | `--color-brand-600` | `bg-brand-600` |
-| Màu nhấn |  | `--color-accent-500` | `text-accent-500` |
-| Chữ chính |  | `--color-ink` | `text-ink` |
-| Chữ phụ |  | `--color-muted` | `text-muted` |
-| Nền trang |  | `--color-surface` | `bg-surface` |
-| Viền |  | `--color-line` | `border-line` |
-| Phông tiêu đề |  | `--font-display` | `font-display` |
-| Phông nội dung |  | `--font-body` | `font-body` |
-| H1 / H2 / H3 |  | — | `text-5xl ...` |
-| Padding dọc section |  | — | `py-24` |
-| Bo góc thẻ |  | `--radius-card` | `rounded-card` |
+| Màu thương hiệu chính | `#9C5AFF` | `--color-brand-600` | `bg-brand-600` |
+| Màu nhấn | `#1C64F2` | `--color-accent-500` | `text-accent-500` |
+| Chữ chính | `#111928` | `--color-ink` | `text-ink` |
+| Chữ phụ | `#6B7280` | `--color-muted` | `text-muted` |
+| Nền trang | `#FFFFFF` | `--color-surface` | `bg-surface` |
+| Viền | `#E5E7EB` | `--color-line` | `border-line` |
+| Phông tiêu đề | `Inter` | `--font-display` | `font-display` |
+| Phông nội dung | `Inter` | `--font-body` | `font-body` |
+| H1 / H2 / H3 | `60px - 36px - 36px` | — | `text-5xl ...` |
+| Padding dọc section | `64px ` | — | `py-24` |
+| Bo góc thẻ | `8px` | `--radius-card` | `rounded-card` |
