@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần Mềm Bảo Mật Mạng</title>
+    
+    <!-- Font Be Vietnam Pro từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Link CSS của Tailwind -->
+<link rel="stylesheet" href="../dist/output.css" />
+</head>
+<body class="font-body text-ink bg-surface">
+    <!-- Nút nhảy đến nội dung chính dành cho trình đọc màn hình -->
+    <a href="#main">Bỏ qua đến nội dung chính</a>
+
+ <!-- 1. Navbar -->
+<header class="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4">
+    <a href="#hero" class="font-display text-2xl font-bold text-brand-600">SecureNet</a>
+    <nav aria-label="Điều hướng chính" class="hidden gap-8 font-medium md:flex">
+        <a href="#hero" class="hover:text-brand-600 transition-colors">Trang chủ</a>
+        <a href="#features" class="hover:text-brand-600 transition-colors">Tính năng</a>
+        <a href="#pricing" class="hover:text-brand-600 transition-colors">Bảng giá</a>
+    </nav>
+    <div class="flex items-center gap-4">
+        <button class="font-semibold transition-colors hover:text-brand-600">Đăng nhập</button>
+        <button class="btn btn-primary">Đăng ký</button>
+    </div>
+</header>
+    <main id="main">
+<div class="max-w-2xl place-self-center"> 
+    <h1 id="hero-title" class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+        Giải pháp Bảo mật Mạng Toàn diện cho Doanh nghiệp
+    </h1>
+    <p class="mb-8 font-light text-gray-500 sm:text-xl lg:text-xl">
+        Bảo vệ dữ liệu của bạn khỏi mọi mối đe dọa trực tuyến với hệ thống AI tiên tiến nhất.
+    </p>
+    <div class="flex flex-col gap-4 sm:flex-row">
+        <a href="#pricing" class="btn btn-primary">Bắt đầu dùng thử</a>
+        <button class="btn border border-gray-300 bg-white text-gray-900 hover:bg-gray-100">
+            Xem video giới thiệu
+        </button>
+    </div>
+</div>
+      <!-- 3. Logo khách hàng -->
+        <section aria-labelledby="clients-title" class="section border-b border-line pb-10 text-center">
+            <h2 id="clients-title" class="text-sm font-semibold uppercase tracking-wider text-muted">
+                Được tin dùng bởi các tập đoàn hàng đầu
+            </h2>
+            <ul class="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6 text-xl font-bold text-gray-400">
+                <li>Công ty TechCorp</li>
+                <li>Ngân hàng SecureBank</li>
+                <li>Tập đoàn VinaSec</li>
+                <li>Hệ thống Spotify</li>
+                <li>Dịch vụ Airbnb</li>
+            </ul>
+        </section>
+        <!-- 4. Tính năng -->
+        <section aria-labelledby="features-title" class="section">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 id="features-title" class="text-3xl font-extrabold text-gray-900 md:text-4xl">Các tính năng nổi bật</h2>
+                <p class="mt-4 text-lg text-muted">Hệ thống bảo vệ toàn diện giúp bạn an tâm phát triển doanh nghiệp mà không lo về rủi ro bảo mật.</p>
+            </div>
+            <ul class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                
+                <!-- Tính năng 1 -->
+                <li>
+                    <span class="mb-4 grid h-11 w-11 place-items-center rounded-lg bg-brand-50 text-brand-600">
+                        <svg class="h-6 w-6" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </span>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900">Tường lửa thông minh</h3>
+                    <p class="text-muted">Tự động phát hiện và ngăn chặn các cuộc tấn công DDoS ngay trước khi chúng chạm tới máy chủ của bạn.</p>
+                </li>
+                <!-- Tính năng 2 -->
+                <li>
+                    <span class="mb-4 grid h-11 w-11 place-items-center rounded-lg bg-brand-50 text-brand-600">
+                        <svg class="h-6 w-6" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </span>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900">Mã hóa dữ liệu AES-256</h3>
+                    <p class="text-muted">Mọi thông tin trên đường truyền đều được bảo vệ tuyệt đối bằng tiêu chuẩn mã hóa của quân đội.</p>
+                </li>
+                <!-- Tính năng 3 -->
+                <li>
+                    <span class="mb-4 grid h-11 w-11 place-items-center rounded-lg bg-brand-50 text-brand-600">
+                        <svg class="h-6 w-6" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </span>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900">Giám sát 24/7</h3>
+                    <p class="text-muted">Bảng điều khiển trực quan giúp theo dõi luồng mạng và nhận cảnh báo theo thời gian thực.</p>
+                </li>
+            </ul>
+        </section>
+       <!-- 5. Số liệu (Metrics) -->
+        <section aria-labelledby="metrics-title" class="section">
+            <h2 id="metrics-title" class="sr-only">Những con số ấn tượng</h2> 
+            <div class="mx-auto max-w-4xl rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-100">
+                <dl class="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:divide-x sm:divide-gray-200">
+                    <!-- Khối số liệu 1 -->
+                    <div class="flex flex-col text-center">
+                        <dt class="order-2 mt-2 text-sm text-muted">Doanh nghiệp sử dụng</dt>
+                        <dd class="order-1 font-display text-4xl font-extrabold text-brand-600">10,000+</dd>
+                    </div>
+                    <!-- Khối số liệu 2 -->
+                    <div class="flex flex-col text-center">
+                        <dt class="order-2 mt-2 text-sm text-muted">Cuộc tấn công chặn mỗi ngày</dt>
+                        <dd class="order-1 font-display text-4xl font-extrabold text-brand-600">5M</dd>
+                    </div>
+                    <!-- Khối số liệu 3 -->
+                    <div class="flex flex-col text-center">
+                        <dt class="order-2 mt-2 text-sm text-muted">Thời gian uptime</dt>
+                        <dd class="order-1 font-display text-4xl font-extrabold text-brand-600">99.99%</dd>
+                    </div>
+
+                </dl>
+            </div>
+        </section>
+        <!-- 6. Cảm nhận -->
+        <section aria-labelledby="testimonials-title" class="section bg-gray-50">
+            <h2 id="testimonials-title" class="mb-12 text-center text-3xl font-extrabold text-gray-900">Khách hàng nói gì về chúng tôi</h2>
+            <div class="grid gap-8 lg:grid-cols-2">
+                <!-- Cảm nhận 1 -->
+                <figure class="flex flex-col items-center rounded-xl bg-white p-8 text-center shadow-sm ring-1 ring-gray-100">
+                    <blockquote class="mb-6 max-w-xl text-lg italic text-gray-600">
+                        "Hệ thống của chúng tôi an toàn hơn bao giờ hết từ khi dùng phần mềm này."
+                    </blockquote>
+                    <figcaption class="flex items-center gap-3">
+                        <span class="font-bold text-gray-900">Nguyễn Văn Thanh</span>
+                        <span class="text-gray-300">|</span>
+                        <cite class="text-sm font-medium not-italic text-muted">Giám đốc IT</cite>
+                    </figcaption>
+                </figure>
+                <!-- Cảm nhận 2 -->
+                <figure class="flex flex-col items-center rounded-xl bg-white p-8 text-center shadow-sm ring-1 ring-gray-100">
+                    <blockquote class="mb-6 max-w-xl text-lg italic text-gray-600">
+                        "Dễ dàng cài đặt và đội ngũ hỗ trợ rất nhiệt tình. Tôi hoàn toàn yên tâm."
+                    </blockquote>
+                    <figcaption class="flex items-center gap-3">
+                        <span class="font-bold text-gray-900">Trần Thị Nga</span>
+                        <span class="text-gray-300">|</span>
+                        <cite class="text-sm font-medium not-italic text-muted">Trưởng phòng Kỹ thuật</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- 7. Bảng giá -->
+        <section aria-labelledby="pricing-title" class="section">
+            <div class="mx-auto max-w-3xl text-center mb-14">
+                <h2 id="pricing-title" class="text-3xl font-extrabold text-gray-900 md:text-4xl">Bảng giá dịch vụ</h2>
+                <p class="mt-4 text-lg text-muted">Lựa chọn gói bảo mật phù hợp với quy mô doanh nghiệp của bạn.</p>
+            </div>
+            <ul class="grid items-stretch gap-6 lg:grid-cols-3">
+                <!-- GÓI CƠ BẢN -->
+                <li class="flex h-full flex-col rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900">Gói Cơ bản</h3>
+                    <p class="mt-4 flex items-baseline gap-x-2">
+                        <span class="font-display text-4xl font-extrabold text-gray-900">500K</span>
+                        <span class="text-muted">/ tháng</span>
+                    </p>
+                    <ul class="mt-8 space-y-4 text-sm text-gray-600">
+                        <li>Hỗ trợ 50 thiết bị</li>
+                        <li>Cập nhật bảo mật hàng tuần</li>
+                    </ul>
+                    <a href="#" class="btn mt-auto w-full border border-gray-300 bg-white text-gray-900 hover:bg-gray-50">Chọn gói Cơ bản</a>
+                </li>
+                <!-- GÓI DOANH NGHIỆP (NỔI BẬT) -->
+                <li class="relative flex h-full flex-col rounded-2xl bg-white p-8 shadow-md ring-2 ring-brand-600">
+                    <span class="absolute -top-3 left-6 rounded-full bg-brand-600 px-3 py-1 text-xs font-semibold text-white">Được chọn nhiều nhất</span>
+                    <h3 class="text-xl font-semibold text-brand-600">Gói Doanh nghiệp</h3>
+                    <p class="mt-4 flex items-baseline gap-x-2">
+                        <span class="font-display text-4xl font-extrabold text-gray-900">2M</span>
+                        <span class="text-muted">/ tháng</span>
+                    </p>
+                    <ul class="mt-8 space-y-4 text-sm text-gray-600">
+                        <li>Thiết bị không giới hạn</li>
+                        <li>Hỗ trợ kỹ thuật 24/7</li>
+                        <li>Phân tích lưu lượng bằng AI</li>
+                        <li>Báo cáo bảo mật hàng tháng</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-auto w-full">Chọn gói Doanh nghiệp</a>
+                </li>
+                <!-- GÓI TẬP ĐOÀN -->
+                <li class="flex h-full flex-col rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900">Gói Tập đoàn</h3>
+                    <p class="mt-4 flex items-baseline gap-x-2">
+                        <span class="font-display text-4xl font-extrabold text-gray-900">Liên hệ</span>
+                    </p>
+                    <ul class="mt-8 space-y-4 text-sm text-gray-600">
+                        <li>Triển khai trên máy chủ vật lý (On-premise)</li>
+                        <li>Kỹ sư bảo mật chuyên trách</li>
+                    </ul>
+                    <a href="#" class="btn mt-auto w-full border border-gray-300 bg-white text-gray-900 hover:bg-gray-50">Nhận báo giá</a>
+                </li>
+            </ul>
+        </section>
+       <!-- 8. FAQ -->
+        <section aria-labelledby="faq-title" class="section">
+            <div class="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+                <div>
+                    <h2 id="faq-title" class="text-3xl font-extrabold text-gray-900">Câu hỏi thường gặp (FAQ)</h2>
+                    <p class="mt-4 text-muted">Giải đáp mọi thắc mắc của bạn về tính năng, bảo mật và chi phí dịch vụ của chúng tôi.</p>
+                </div>
+                
+                <ul class="space-y-8">
+                    <li>
+                        <h3 class="text-lg font-bold text-gray-900">Phần mềm có tương thích với hệ thống máy chủ cũ không?</h3>
+                        <p class="mt-2 text-muted">Có, phần mềm hỗ trợ hầu hết các hệ điều hành và phần cứng hiện tại mà không làm gián đoạn hệ thống.</p>
+                    </li>
+                    <li>
+                        <h3 class="text-lg font-bold text-gray-900">Tôi có thể hủy đăng ký bất cứ lúc nào không?</h3>
+                        <p class="mt-2 text-muted">Hoàn toàn được, bạn không bị ràng buộc hợp đồng dài hạn và có thể hủy bất cứ lúc nào khi không còn nhu cầu.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 9. Call to Action  -->
+        <section aria-labelledby="cta-title" class="section bg-brand-50 text-center">
+            <div class="mx-auto max-w-3xl">
+                <h2 id="cta-title" class="text-3xl font-extrabold text-gray-900 md:text-4xl">Sẵn sàng bảo vệ hệ thống của bạn?</h2>
+                <p class="mt-4 text-lg text-muted">Đăng ký ngay hôm nay để nhận 14 ngày dùng thử miễn phí đầy đủ tính năng cao cấp.</p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="#register" class="btn btn-primary">Đăng ký ngay</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 10. Footer (Chân trang 4 cột) -->
+    <footer class="border-t border-line bg-white py-16">
+        <div class="mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Cột 1: Logo và mô tả -->
+            <div>
+                <a href="#hero" class="font-display text-xl font-bold text-brand-600">SecureNet</a>
+                <p class="mt-4 text-sm text-muted">Giải pháp bảo mật mạng toàn diện, bảo vệ doanh nghiệp trước mọi mối đe dọa kỹ thuật số.</p>
+            </div>
+            <!-- Cột 2: Sản phẩm -->
+            <nav aria-labelledby="footer-product">
+                <h2 id="footer-product" class="text-sm font-semibold uppercase tracking-wider text-gray-900">Sản phẩm</h2>
+                <ul class="mt-4 space-y-3 text-sm text-muted">
+                    <li><a href="#" class="hover:text-brand-600">Tường lửa AI</a></li>
+                    <li><a href="#" class="hover:text-brand-600">Mã hóa dữ liệu</a></li>
+                    <li><a href="#" class="hover:text-brand-600">Giám sát 24/7</a></li>
+                </ul>
+            </nav>
+            <!-- Cột 3: Hỗ trợ -->
+            <nav aria-labelledby="footer-support">
+                <h2 id="footer-support" class="text-sm font-semibold uppercase tracking-wider text-gray-900">Hỗ trợ</h2>
+                <ul class="mt-4 space-y-3 text-sm text-muted">
+                    <li><a href="#" class="hover:text-brand-600">Trung tâm trợ giúp</a></li>
+                    <li><a href="#" class="hover:text-brand-600">Tài liệu API</a></li>
+                    <li><a href="#" class="hover:text-brand-600">Liên hệ chuyên gia</a></li>
+                </ul>
+            </nav>
+            <!-- Cột 4: Địa chỉ / Pháp lý -->
+            <nav aria-labelledby="footer-legal">
+                <h2 id="footer-legal" class="text-sm font-semibold uppercase tracking-wider text-gray-900">Pháp lý</h2>
+                <ul class="mt-4 space-y-3 text-sm text-muted">
+                    <li><a href="#" class="hover:text-brand-600">Chính sách bảo mật</a></li>
+                    <li><a href="#" class="hover:text-brand-600">Điều khoản sử dụng</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Bản quyền ở dưới cùng -->
+        <div class="mx-auto mt-12 max-w-6xl border-t border-line px-5 pt-8 text-center text-sm text-muted">
+            &copy; 2026 Phần Mềm Bảo Mật Mạng. Bảo lưu mọi quyền.
+        </div>
+    </footer>
+</body>
+</html>
