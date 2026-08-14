@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phần Mềm Bảo Mật Mạng</title>
-
+    
+    <!-- Nhúng font Be Vietnam Pro từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Link CSS của Tailwind -->
     <link rel="stylesheet" href="./dist/output.css" />
 </head>
-<body>
+
+<!-- Khai báo theme tổng ở body: Dùng font body mặc định, chữ màu ink, nền màu surface -->
+<body class="font-body text-ink bg-surface">
     <!-- Nút nhảy đến nội dung chính dành cho trình đọc màn hình -->
     <a href="#main">Bỏ qua đến nội dung chính</a>
 
@@ -19,29 +27,19 @@
                 <li><a href="#features">Tính năng</a></li>
                 <li><a href="#pricing">Bảng giá</a></li>
             </ul>
-            <button class="btn">Đăng nhập</button>
-            <button class="btn btn-primary">Đăng ký</button>
+            <button>Đăng nhập</button>
+            <button>Đăng ký</button>
         </nav>
     </header>
-       <main id="main">
+
+    <main id="main">
         <!-- 2. Hero -->
-        <section aria-labelledby="hero-title" class="section grid items-center gap-14 lg:grid-cols-2 lg:gap-16">
-
-            <div>
-                <h1 id="hero-title">Giải pháp Bảo mật Mạng Toàn diện cho Doanh nghiệp</h1>
-                <p>Bảo vệ dữ liệu của bạn khỏi mọi mối đe dọa trực tuyến với hệ thống AI tiên tiến nhất.</p>
-                <div style="margin-top: 20px;">
-              
-                    <a href="#pricing" class="btn btn-primary">Bắt đầu dùng thử</a>
-                    <button class="btn">Xem video giới thiệu</button>
-                </div>
-            </div>
-
-            <div>
-                <div style="background-color: #e5e7eb; width: 100%; aspect-ratio: 4/3; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                    <p style="color: #6b7280;">Khu vực Hình ảnh Hero</p>
-                </div>
-            </div>
+        <section aria-labelledby="hero-title">
+            <!-- Áp dụng màu brand-600 và font-display cho H1 để test theme như yêu cầu -->
+            <h1 id="hero-title" class="font-display text-brand-600">Giải pháp Bảo mật Mạng Toàn diện cho Doanh nghiệp</h1>
+            <p>Bảo vệ dữ liệu của bạn khỏi mọi mối đe dọa trực tuyến với hệ thống AI tiên tiến nhất.</p>
+            <a href="#pricing">Bắt đầu dùng thử</a>
+            <button>Xem video giới thiệu</button>
         </section>
 
         <!-- 3. Logo khách hàng -->
