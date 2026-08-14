@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần Mềm Bảo Mật Mạng</title>
+    
+    <!-- Nhúng font Be Vietnam Pro từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Link CSS của Tailwind -->
+<link rel="stylesheet" href="../dist/output.css" />
+</head>
+
+<!-- Khai báo theme tổng ở body: Dùng font body mặc định, chữ màu ink, nền màu surface -->
+<body class="font-body text-ink bg-surface">
+    <!-- Nút nhảy đến nội dung chính dành cho trình đọc màn hình -->
+    <a href="#main">Bỏ qua đến nội dung chính</a>
+
+ <!-- 1. Navbar -->
+<header class="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4">
+    <!-- Logo (Tạm dùng chữ, bạn có thể thay bằng thẻ <img> sau) -->
+    <a href="#hero" class="font-display text-2xl font-bold text-brand-600">SecureNet</a>
+
+    <!-- Cụm Links ở giữa -->
+    <nav aria-label="Điều hướng chính" class="hidden gap-8 font-medium md:flex">
+        <a href="#hero" class="hover:text-brand-600 transition-colors">Trang chủ</a>
+        <a href="#features" class="hover:text-brand-600 transition-colors">Tính năng</a>
+        <a href="#pricing" class="hover:text-brand-600 transition-colors">Bảng giá</a>
+    </nav>
+
+    <!-- Cụm Nút bấm bên phải -->
+    <div class="flex items-center gap-4">
+        <button class="font-semibold transition-colors hover:text-brand-600">Đăng nhập</button>
+        <button class="btn btn-primary">Đăng ký</button>
+    </div>
+</header>
+    <main id="main">
+<<!-- Cột chữ bên trái -->
+<div class="max-w-2xl place-self-center"> 
+    <!-- Cập nhật H1: Chữ siêu to, in đậm, màu đen xám -->
+    <h1 id="hero-title" class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+        Giải pháp Bảo mật Mạng Toàn diện cho Doanh nghiệp
+    </h1>
+    
+    <!-- Cập nhật thẻ P: Chữ màu xám, kích thước to hơn -->
+    <p class="mb-8 font-light text-gray-500 sm:text-xl lg:text-xl">
+        Bảo vệ dữ liệu của bạn khỏi mọi mối đe dọa trực tuyến với hệ thống AI tiên tiến nhất.
+    </p>
+    
+    <!-- Nhóm Nút bấm -->
+    <div class="flex flex-col gap-4 sm:flex-row">
+        <a href="#pricing" class="btn btn-primary">Bắt đầu dùng thử</a>
+        <!-- Thêm class cho nút thứ 2 để giống giao diện "Pricing & FAQ" -->
+        <button class="btn border border-gray-300 bg-white text-gray-900 hover:bg-gray-100">
+            Xem video giới thiệu
+        </button>
+    </div>
+</div>
+        <!-- 3. Logo khách hàng -->
+        <section aria-labelledby="clients-title">
+            <h2 id="clients-title">Được tin dùng bởi các tập đoàn hàng đầu</h2>
+            <ul>
+                <li>Công ty TechCorp</li>
+                <li>Ngân hàng SecureBank</li>
+                <li>Tập đoàn VinaSec</li>
+            </ul>
+        </section>
+
+        <!-- 4. Tính năng -->
+        <section aria-labelledby="features-title">
+            <h2 id="features-title">Các tính năng nổi bật</h2>
+            <ul>
+                <li>
+                    <h3>Tường lửa thông minh</h3>
+                    <p>Tự động phát hiện và ngăn chặn tấn công DDoS.</p>
+                </li>
+                <li>
+                    <h3>Mã hóa dữ liệu chuẩn AES-256</h3>
+                    <p>Bảo vệ thông tin tuyệt đối trên đường truyền.</p>
+                </li>
+                <li>
+                    <h3>Giám sát 24/7</h3>
+                    <p>Theo dõi luồng mạng và cảnh báo theo thời gian thực.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 5. Số liệu -->
+        <section aria-labelledby="metrics-title">
+            <h2 id="metrics-title">Những con số ấn tượng</h2>
+            <ul>
+                <li>Hơn 10,000 doanh nghiệp sử dụng</li>
+                <li>Ngăn chặn 5 triệu cuộc tấn công mỗi ngày</li>
+                <li>Thời gian uptime đạt 99.99%</li>
+            </ul>
+        </section>
+
+        <!-- 6. Cảm nhận -->
+        <section aria-labelledby="testimonials-title">
+            <h2 id="testimonials-title">Khách hàng nói gì về chúng tôi</h2>
+            <ul>
+                <li>
+                    <p>"Hệ thống của chúng tôi an toàn hơn bao giờ hết từ khi dùng phần mềm này."</p>
+                    <p>- Nguyễn Văn A, Giám đốc IT</p>
+                </li>
+                <li>
+                    <p>"Dễ dàng cài đặt và đội ngũ hỗ trợ rất nhiệt tình."</p>
+                    <p>- Trần Thị B, Trưởng phòng Kỹ thuật</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 7. Bảng giá -->
+        <section aria-labelledby="pricing-title">
+            <h2 id="pricing-title">Bảng giá dịch vụ</h2>
+            <ul>
+                <li>
+                    <h3>Gói Cơ bản</h3>
+                    <p>500,000 VNĐ / tháng</p>
+                    <ul>
+                        <li>Hỗ trợ 50 thiết bị</li>
+                        <li>Cập nhật bảo mật hàng tuần</li>
+                    </ul>
+                    <button>Chọn gói Cơ bản</button>
+                </li>
+                <li>
+                    <h3>Gói Doanh nghiệp</h3>
+                    <p>2,000,000 VNĐ / tháng</p>
+                    <ul>
+                        <li>Thiết bị không giới hạn</li>
+                        <li>Hỗ trợ kỹ thuật 24/7</li>
+                    </ul>
+                    <button>Chọn gói Doanh nghiệp</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 8. Câu hỏi thường gặp -->
+        <section aria-labelledby="faq-title">
+            <h2 id="faq-title">Câu hỏi thường gặp (FAQ)</h2>
+            <ul>
+                <li>
+                    <h3>Phần mềm có tương thích với hệ thống máy chủ cũ không?</h3>
+                    <p>Có, phần mềm hỗ trợ hầu hết các hệ điều hành và phần cứng hiện tại.</p>
+                </li>
+                <li>
+                    <h3>Tôi có thể hủy đăng ký bất cứ lúc nào?</h3>
+                    <p>Hoàn toàn được, bạn không bị ràng buộc hợp đồng dài hạn và có thể hủy khi không còn nhu cầu.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 9. CTA -->
+        <section aria-labelledby="cta-title">
+            <h2 id="cta-title">Sẵn sàng bảo vệ hệ thống của bạn?</h2>
+            <p>Đăng ký ngay hôm nay để nhận 14 ngày dùng thử miễn phí đầy đủ tính năng.</p>
+            <a href="#register">Đăng ký ngay</a>
+        </section>
+    </main>
+
+    <!-- 10. Footer -->
+    <footer>
+        <nav aria-label="Liên kết chân trang">
+            <ul>
+                <li><a href="#privacy">Chính sách bảo mật</a></li>
+                <li><a href="#terms">Điều khoản sử dụng</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Phần Mềm Bảo Mật Mạng. Bản quyền thuộc về chúng tôi.</p>
+    </footer>
+</body>
+</html>
