@@ -1,49 +1,25 @@
 @import "tailwindcss";
-
-/* Khai báo variant dark mode */
 @custom-variant dark (&:where(.dark, .dark *));
-
-/* Nhiệm vụ 4: Trích xuất Component tái sử dụng */
 @layer components {
-  /* Khai báo container dùng chung */
   .section { @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28; }
   .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-colors; }
   .btn-primary { @apply bg-brand-600 text-white hover:bg-brand-700; }
   .card { @apply flex flex-col rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 dark:bg-surface-dark dark:ring-line-invert dark:shadow-none; }
 }
-
 @theme {
   --color-brand-50: #1E3A8A;
   --color-brand-100: #dbeafe;
   --color-brand-600: #2563eb;
   --color-brand-700: #1d4ed8;
-  --color-brand-900: #1e3a8a;
-
-  --color-accent-300: #6ee7b7;
-  --color-accent-400: #34d399;
-  --color-accent-500: #10b981;
-
-  /* CẶP MÀU SÁNG - TỐI (Bổ sung thêm 3 biến màu tối) */
+  /* CẶP MÀU SÁNG - TỐI DÙNG CHO TOÀN BỘ WEB */
   --color-ink: #0F172A;
-  --color-ink-invert: #eaf2ee; 
-  
+  --color-ink-invert: #eaf2ee; /* Chữ trắng dịu */
   --color-muted: #64748B;
-  
   --color-line: #E2E8F0;
-  --color-line-invert: #24403a; 
-  
+  --color-line-invert: #24403a; /* Viền tối */
   --color-surface: #ffffff;
-  --color-surface-dark: #0e1c19; 
-
+  --color-surface-dark: #0e1c19; /* Nền tối */
   --font-display: "Be Vietnam Pro", system-ui, sans-serif;
   --font-body: "Be Vietnam Pro", system-ui, sans-serif;
-  --radius-card: 0.875rem;
-  --color-text-primary: #111827; /* Thay cho text-gray-900 */
-  --color-text-primary-invert: #F9FAFB; 
-  
-  --color-text-secondary: #4B5563; /* Thay cho text-gray-500/600 */
-  --color-text-secondary-invert: #9CA3AF;
-  
-  --color-border-subtle: #E5E7EB; /* Thay cho viền mờ */
-  --color-border-subtle-invert: #374151;
 }
+

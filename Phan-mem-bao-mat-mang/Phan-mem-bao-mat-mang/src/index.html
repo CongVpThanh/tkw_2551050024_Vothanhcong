@@ -1,48 +1,47 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phần Mềm Bảo Mật Mạng</title>
-    
     <!-- Font Be Vietnam Pro từ Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
     <!-- Link CSS của Tailwind -->
 <link rel="stylesheet" href="../dist/output.css" />
 </head>
-<body class="font-body text-ink bg-surface">
+<body class="font-body text-ink bg-surface dark:text-ink-invert dark:bg-surface-dark">
     <!-- Nút nhảy đến nội dung chính dành cho trình đọc màn hình -->
     <a href="#main">Bỏ qua đến nội dung chính</a>
-
  <!-- 1. Navbar -->
 <header class="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4">
     <a href="#hero" class="font-display text-2xl font-bold text-brand-600">SecureNet</a>
     <nav aria-label="Điều hướng chính" class="hidden gap-8 font-medium md:flex">
-        <a href="#hero" class="hover:text-brand-600 transition-colors">Trang chủ</a>
-        <a href="#features" class="hover:text-brand-600 transition-colors">Tính năng</a>
-        <a href="#pricing" class="hover:text-brand-600 transition-colors">Bảng giá</a>
-    </nav>
+    <a href="index.html" class="hover:text-brand-600 transition-colors">Trang chủ</a>
+    <a href="pricing.html" class="hover:text-brand-600 transition-colors">Bảng giá</a>
+    <a href="contact.html" class="hover:text-brand-600 transition-colors">Liên hệ</a>
+</nav>
     <div class="flex items-center gap-4">
         <button class="font-semibold transition-colors hover:text-brand-600">Đăng nhập</button>
         <button class="btn btn-primary">Đăng ký</button>
     </div>
 </header>
     <main id="main">
-<div class="max-w-2xl place-self-center"> 
-    <h1 id="hero-title" class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-        Giải pháp Bảo mật Mạng Toàn diện cho Doanh nghiệp
-    </h1>
-    <p class="mb-8 font-light text-gray-500 sm:text-xl lg:text-xl">
-        Bảo vệ dữ liệu của bạn khỏi mọi mối đe dọa trực tuyến với hệ thống AI tiên tiến nhất.
-    </p>
-    <div class="flex flex-col gap-4 sm:flex-row">
-        <a href="#pricing" class="btn btn-primary">Bắt đầu dùng thử</a>
-        <button class="btn border border-gray-300 bg-white text-gray-900 hover:bg-gray-100">
-            Xem video giới thiệu
-        </button>
+<div class="grid gap-8 lg:grid-cols-2 items-center">
+    <h1 id="hero-title" class="mb-4 text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl">
+            Giải pháp Bảo mật Mạng Toàn diện cho Doanh nghiệp
+        </h1>
+<p class="mb-8 font-light opacity-80 sm:text-xl lg:text-xl">
+            Bảo vệ dữ liệu của bạn khỏi mọi mối đe dọa trực tuyến với hệ thống AI tiên tiến nhất.
+        </p>
+        
+        <div class="flex flex-col gap-4 sm:flex-row">
+            <a href="#pricing" class="btn btn-primary">Bắt đầu dùng thử</a>
+<button class="btn border border-line bg-white text-ink hover:bg-gray-100 dark:border-line-invert dark:bg-surface-dark dark:text-ink-invert dark:hover:bg-gray-800">
+                Xem video giới thiệu
+            </button>
+        </div>
     </div>
 </div>
       <!-- 3. Logo khách hàng -->
@@ -65,7 +64,6 @@
                 <p class="mt-4 text-lg text-muted">Hệ thống bảo vệ toàn diện giúp bạn an tâm phát triển doanh nghiệp mà không lo về rủi ro bảo mật.</p>
             </div>
             <ul class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                
                 <!-- Tính năng 1 -->
                 <li>
                     <span class="mb-4 grid h-11 w-11 place-items-center rounded-lg bg-brand-50 text-brand-600">
@@ -94,7 +92,7 @@
         </section>
        <!-- 5. Số liệu (Metrics) -->
         <section aria-labelledby="metrics-title" class="section">
-            <h2 id="metrics-title" class="sr-only">Những con số ấn tượng</h2> 
+            <h2 id="metrics-title" class="sr-only">Những con số ấn tượng</h2>
             <div class="mx-auto max-w-4xl rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-100">
                 <dl class="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:divide-x sm:divide-gray-200">
                     <!-- Khối số liệu 1 -->
@@ -112,7 +110,6 @@
                         <dt class="order-2 mt-2 text-sm text-muted">Thời gian uptime</dt>
                         <dd class="order-1 font-display text-4xl font-extrabold text-brand-600">99.99%</dd>
                     </div>
-
                 </dl>
             </div>
         </section>
@@ -201,7 +198,6 @@
                     <h2 id="faq-title" class="text-3xl font-extrabold text-gray-900">Câu hỏi thường gặp (FAQ)</h2>
                     <p class="mt-4 text-muted">Giải đáp mọi thắc mắc của bạn về tính năng, bảo mật và chi phí dịch vụ của chúng tôi.</p>
                 </div>
-                
                 <ul class="space-y-8">
                     <li>
                         <h3 class="text-lg font-bold text-gray-900">Phần mềm có tương thích với hệ thống máy chủ cũ không?</h3>
@@ -227,7 +223,7 @@
     </main>
     <!-- 10. Footer (Chân trang 4 cột) -->
     <footer class="border-t border-line bg-white py-16">
-        <div class="mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-2 lg:grid-cols-4">
+        <div class="mx-auto grid max-w-6xl gap-10 px-5 sm:grid-cols-2 lg:grid-cols-4">
             <!-- Cột 1: Logo và mô tả -->
             <div>
                 <a href="#hero" class="font-display text-xl font-bold text-brand-600">SecureNet</a>
