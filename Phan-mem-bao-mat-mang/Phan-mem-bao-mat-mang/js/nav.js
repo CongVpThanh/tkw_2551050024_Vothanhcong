@@ -61,7 +61,7 @@ if(e.matchs) setOpen(false);
 menu.addEventListener("click",()=>{
   if(e.target.closest("a"))setOpen(false);
 });
-  }
+  };
 /* ------------------------------------------------------------------ */
 /* Tính năng 2 — Navbar đổi trạng thái khi cuộn      (tiết 2)         */
 /* ------------------------------------------------------------------ */
