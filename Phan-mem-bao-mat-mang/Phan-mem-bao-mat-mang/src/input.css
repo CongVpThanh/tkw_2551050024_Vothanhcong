@@ -13,12 +13,12 @@
   --color-brand-700: #1d4ed8;
   /* CẶP MÀU SÁNG - TỐI DÙNG CHO TOÀN BỘ WEB */
   --color-ink: #0F172A;
-  --color-ink-invert: #eaf2ee; /* Chữ trắng dịu */
+  --color-ink-invert: #eaf2ee;
   --color-muted: #64748B;
   --color-line: #E2E8F0;
-  --color-line-invert: #24403a; /* Viền tối */
+  --color-line-invert: #24403a;
   --color-surface: #ffffff;
-  --color-surface-dark: #0e1c19; /* Nền tối */
+  --color-surface-dark: #0e1c19;
   --font-display: "Be Vietnam Pro", system-ui, sans-serif;
   --font-body: "Be Vietnam Pro", system-ui, sans-serif;
 }
