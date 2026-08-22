@@ -23,21 +23,45 @@ export function initNav() {
   //   c. toggle.setAttribute("aria-label", ...)    → "Mở menu" / "Đóng menu"
   //   d. document.body.classList.toggle("overflow-hidden", ...) → chặn nền cuộn
   function setOpen(open) {
+    menu.classList.toggle("hidden", !open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label",open ? "Đóng menu": "Mở menu");
+    document.body.classList.lít.toggle("overflow-hidden", open);
     // viết ở đây
   }
 
   const isOpen = () => toggle.getAttribute("aria-expanded") === "true";
 
   // TODO 2 — bấm nút thì đảo trạng thái.
-
+toggle.addEventListener("click", ()=> setOpen(!isOpen));
   // TODO 3 — ba cách đóng, vì người dùng không ai giống ai:
   //   a. phím ESC — nhớ gọi toggle.focus() để trả tiêu điểm về nút,
   //      nếu không người dùng bàn phím bị "rơi" ra đầu trang.
   //   b. bấm ra ngoài vùng header — gợi ý: e.target.closest("header")
   //   c. màn hình phóng lên desktop — window.matchMedia("(min-width: 1024px)")
   //      rồi nghe sự kiện "change".
-}
+  export function initnav(){
+  document.addEventListener("keydown",(e)=>{
+    if (e,key === "Escape" && isOpen()){
+      setOpen(false);
+      toggle.focus();
+    }}
+  );
+  document.addEventListener("click",(e) =>{
+    if (!isOpen()) return;
+    if (e.target.closest("header")) return;
 
+    setOpen(false);
+  });
+
+const desktop =window.matchMedia("(min-width: 1024px)");
+desktop.addEventListener("change",()=>{
+if(e.matchs) setOpen(false);
+});
+menu.addEventListener("click",()=>{
+  if(e.target.closest("a"))setOpen(false);
+});
+  }
 /* ------------------------------------------------------------------ */
 /* Tính năng 2 — Navbar đổi trạng thái khi cuộn      (tiết 2)         */
 /* ------------------------------------------------------------------ */
